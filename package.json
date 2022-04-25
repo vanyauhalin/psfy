@@ -1,0 +1,19 @@
+{
+  "name": "spicetify-pseudonative",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Pseudonative macOS theme for Spotify via Spicetify",
+  "keywords": [
+    "macos",
+    "spicetify",
+    "spotify"
+  ],
+  "repository": "github:vanyauhalin/spicetify-pseudonative",
+  "license": "MIT",
+  "author": "Ivan Uhalin <vanyauhalin@gmail.com>",
+  "type": "module",
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=6"
+  }
+}
