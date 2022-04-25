@@ -12,6 +12,11 @@
   "license": "MIT",
   "author": "Ivan Uhalin <vanyauhalin@gmail.com>",
   "type": "module",
+  "devDependencies": {
+    "@arkweid/lefthook": "^0.7.7",
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1"
+  },
   "engines": {
     "node": ">=18",
     "pnpm": ">=6"
