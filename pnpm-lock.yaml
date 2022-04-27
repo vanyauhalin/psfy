@@ -4,14 +4,14 @@ specifiers:
   '@arkweid/lefthook': ^0.7.7
   '@commitlint/cli': ^16.2.3
   '@commitlint/config-conventional': ^16.2.1
-  '@vanyauhalin/stylelint-config-base': ^0.1.0
+  '@vanyauhalin/stylelint-config-base': ^0.3.0
   stylelint: ^14.8.0
 
 devDependencies:
   '@arkweid/lefthook': 0.7.7
   '@commitlint/cli': 16.2.3
   '@commitlint/config-conventional': 16.2.1
-  '@vanyauhalin/stylelint-config-base': 0.1.0_stylelint@14.8.0
+  '@vanyauhalin/stylelint-config-base': 0.3.0_stylelint@14.8.0
   stylelint: 14.8.0
 
 packages:
@@ -269,8 +269,9 @@ packages:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
     dev: true
 
-  /@vanyauhalin/stylelint-config-base/0.1.0_stylelint@14.8.0:
-    resolution: {integrity: sha512-oB25jk3QJSnIX88nIdy2S6IMrYgMc1qQ/iqqYMyEnwLyfBFd+dO7YrRnovuUewnMLglujlLVoGgPIf4NOqYiaw==, tarball: download/@vanyauhalin/stylelint-config-base/0.1.0/562611c33372380ad8df03bcc280cc2904898eb7b165f3b3d8b470eea7b02543}
+  /@vanyauhalin/stylelint-config-base/0.3.0_stylelint@14.8.0:
+    resolution: {integrity: sha512-CBrr9AdgocwlTLVAOxjDsY602SX6D0B6n2BZDXD6ZcZM2SNS20A83TZVafZnOjDiwk0owxevpuWYLQOmFkWUdw==, tarball: download/@vanyauhalin/stylelint-config-base/0.3.0/0039db612c2807977741198ce806284ab6089d2efd2ce612db6926f3da3f982a}
+    engines: {node: '>=12', pnpm: '>=4'}
     peerDependencies:
       stylelint: 14.0.0
     dependencies:
