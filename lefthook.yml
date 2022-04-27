@@ -2,3 +2,9 @@ commit-msg:
   commands:
     commitlint:
       run: commitlint --edit
+
+pre-commit:
+  commands:
+    lint-styles:
+      glob: "*.css"
+      run: pnpm stylelint
