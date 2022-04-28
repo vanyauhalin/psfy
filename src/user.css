@@ -1,0 +1,157 @@
+html {
+  --nav-bar-width: 200px;
+}
+
+.Root__nav-bar {
+  background-color: hsl(120 2% 90%);
+  max-width: 260px;
+  min-width: 200px;
+  width: var(--nav-bar-width);
+}
+
+.main-navBar-entryPoints::before,
+.main-navBar-entryPoints + div hr::before {
+  color: hsl(0 0% 67%);
+  display: block;
+  font-family: system-ui;
+  font-size: .6875rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+  padding: 0 16px;
+}
+
+.main-navBar-entryPoints::before {
+  content: 'Spotify';
+}
+
+.main-navBar-entryPoints + div hr::before {
+  content: 'Playlists';
+}
+
+.main-navBar-navBarItem {
+  padding: 0 10px;
+}
+
+.main-navBar-navBarItem .home-icon,
+.main-navBar-navBarItem .home-active-icon,
+.main-navBar-navBarItem .search-icon,
+.main-navBar-navBarItem .search-active-icon,
+.main-navBar-navBarItem .collection-icon,
+.main-navBar-navBarItem .collection-active-icon {
+  color: hsl(141 73% 42%);
+  height: 16px;
+  width: 16px;
+}
+
+.main-navBar-navBarLink {
+  border-radius: 6px;
+  column-gap: 10px;
+  cursor: default;
+  height: 28px;
+  padding: 0 12px;
+  transition: none;
+}
+
+.main-navBar-navBarLink > span {
+  color: hsl(0 0% 24%);
+  font-family: system-ui;
+  font-size: .8125rem;
+  font-weight: 500;
+  letter-spacing: -.025rem;
+}
+
+.main-navBar-navBarLinkActive {
+  background-color: rgba(189 189 189 / .65);
+}
+
+.main-navBar-entryPoints + div {
+  margin-top: 0;
+}
+
+.main-navBar-entryPoints + div hr {
+  background-color: transparent;
+  height: auto;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.main-navBar-entryPoints + div hr + div {
+  display: none;
+}
+
+.main-navBar-entryPoints + div .GlueDropTarget {
+  padding: 0 10px;
+}
+
+.main-navBar-entryPoints + div .GlueDropTarget > button,
+.main-navBar-entryPoints + div .GlueDropTarget > a {
+  border-radius: 6px;
+  column-gap: 10px;
+  cursor: default;
+  height: 28px;
+  opacity: 1;
+  padding: 0 12px;
+  transition: none;
+}
+
+.main-navBar-entryPoints + div .GlueDropTarget > div {
+  padding: 0;
+}
+
+.main-navBar-entryPoints + div .GlueDropTarget > button > div,
+.main-navBar-entryPoints + div .GlueDropTarget > a > div {
+  height: 16px;
+  margin-right: 0;
+  opacity: 1;
+  padding: 0;
+  transition: none;
+  width: 16px;
+}
+
+.main-navBar-entryPoints + div .GlueDropTarget > button > div > div,
+.main-navBar-entryPoints + div .GlueDropTarget > a > div > div {
+  background-color: transparent;
+  background-image: none;
+  border-radius: 0;
+  color: hsl(141 73% 42%);
+}
+
+.main-navBar-entryPoints + div .GlueDropTarget > div > a {
+  border-radius: 6px;
+  height: 28px;
+  padding: 0 12px;
+}
+
+.main-navBar-entryPoints + div .GlueDropTarget > div > a + div {
+  margin-left: 0;
+}
+
+.main-navBar-entryPoints + div .GlueDropTarget > div > a + div > button {
+  box-sizing: content-box;
+  color: hsl(141 73% 42%);
+  height: 16px;
+  padding-right: 12px;
+  width: 16px;
+}
+
+.main-navBar-entryPoints + div .GlueDropTarget button:focus,
+.main-navBar-entryPoints + div .GlueDropTarget a:focus,
+.main-navBar-entryPoints + div .GlueDropTarget a.active,
+.main-navBar-entryPoints + div .GlueDropTarget a[aria-current=page] {
+  background-color: hsl(0 0% 80%);
+}
+
+.main-navBar-entryPoints + div .GlueDropTarget span,
+.main-navBar-entryPoints + div .GlueDropTarget span:hover {
+  color: hsl(0 0% 24%);
+  font-family: system-ui;
+  font-size: .8125rem;
+  font-weight: 500;
+  letter-spacing: -.025rem;
+  opacity: 1;
+  transition: none;
+}
+
+.os-host {
+  padding-top: 0;
+}
