@@ -1,6 +1,6 @@
 commit-msg:
   commands:
-    commitlint:
+    lint:
       run: commitlint --edit
 
 pre-commit:
