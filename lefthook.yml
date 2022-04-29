@@ -5,6 +5,9 @@ commit-msg:
 
 pre-commit:
   commands:
+    lint-scripts:
+      glob: "*.js"
+      run: eslint {staged_files}
     lint-styles:
       glob: "*.css"
       run: stylelint {staged_files}
