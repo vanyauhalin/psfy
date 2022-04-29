@@ -137,7 +137,7 @@ html {
 .main-navBar-entryPoints + div .GlueDropTarget a:focus,
 .main-navBar-entryPoints + div .GlueDropTarget a.active,
 .main-navBar-entryPoints + div .GlueDropTarget a[aria-current=page] {
-  background-color: hsl(0 0% 80%);
+  background-color: rgba(128 128 128 / .25);
 }
 
 .main-navBar-entryPoints + div .GlueDropTarget span,
