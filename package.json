@@ -12,6 +12,9 @@
   "license": "MIT",
   "author": "Ivan Uhalin <vanyauhalin@gmail.com>",
   "type": "module",
+  "scripts": {
+    "build": "node .postcssrc.js"
+  },
   "devDependencies": {
     "@arkweid/lefthook": "^0.7.7",
     "@commitlint/cli": "^16.2.3",
