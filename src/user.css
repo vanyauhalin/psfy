@@ -75,6 +75,32 @@ html {
   padding-top: 10px;
 }
 
+.os-content > ul {
+  height: inherit;
+}
+
+.os-content > ul > div {
+  /* stylelint-disable-next-line declaration-no-important */
+  height: inherit !important;
+}
+
+.os-content > ul > div > :nth-child(2) {
+  height: inherit;
+  overflow-y: overlay;
+}
+
+.os-content > ul > div > :nth-child(2)::-webkit-scrollbar {
+  width: 15px;
+}
+
+.os-content > ul > div > :nth-child(2)::-webkit-scrollbar-thumb {
+  background-color: rgba(128 128 128 / .65);
+}
+
+.main-nowPlayingBar-container {
+  overflow: hidden;
+}
+
 .main-navBar-entryPoints + div hr + div {
   display: none;
 }
