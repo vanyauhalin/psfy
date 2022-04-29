@@ -1,0 +1,45 @@
+.main-navBar-entryPoints + div {
+  margin-top: 0;
+}
+
+.main-navBar-entryPoints + div hr {
+  background-color: transparent;
+  height: auto;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.main-navBar-entryPoints + div hr::before {
+  color: hsl(0 0% 67%);
+  content: 'Playlists';
+  display: block;
+  font-family: system-ui;
+  font-size: .6875rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+  padding: 0 16px;
+}
+
+.main-navBar-entryPoints + div hr + div {
+  display: none;
+}
+
+.main-navBar-entryPoints + div .GlueDropTarget button[aria-label=Playing] {
+  box-sizing: content-box;
+  height: 16px;
+  margin-left: 0;
+  padding: 0;
+  width: 16px;
+}
+
+.main-navBar-entryPoints + div .GlueDropTarget button[aria-label=Playing]:focus {
+  background-color: transparent;
+}
+
+.main-navBar-entryPoints + div .GlueDropTarget > div {
+  padding: 0;
+}
+
+.os-host {
+  padding-top: 0;
+}

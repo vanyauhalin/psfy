@@ -1,0 +1,50 @@
+.main-navBar-entryPoints::before {
+  color: hsl(0 0% 67%);
+  content: 'Spotify';
+  display: block;
+  font-family: system-ui;
+  font-size: .6875rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+  padding: 0 16px;
+}
+
+.main-navBar-entryPoints a {
+  border-radius: 6px;
+  column-gap: 10px;
+  cursor: default;
+  height: 28px;
+  padding: 0 12px;
+  transition: none;
+}
+
+.main-navBar-entryPoints a[aria-current=page] {
+  background-color: rgba(189 189 189 / .65);
+}
+
+.main-navBar-entryPoints span {
+  color: hsl(0 0% 24%);
+  font-family: system-ui;
+  font-size: .8125rem;
+  font-weight: 500;
+  letter-spacing: -.025rem;
+}
+
+.main-navBar-navBarItem {
+  padding: 0 10px;
+}
+
+.main-navBar-navBarItem .home-icon,
+.main-navBar-navBarItem .home-active-icon,
+.main-navBar-navBarItem .search-icon,
+.main-navBar-navBarItem .search-active-icon,
+.main-navBar-navBarItem .collection-icon,
+.main-navBar-navBarItem .collection-active-icon {
+  color: hsl(141 73% 42%);
+  height: 16px;
+  width: 16px;
+}
+
+.main-navBar-navBarItem > .GlueDropTarget {
+  padding: 0;
+}

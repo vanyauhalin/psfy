@@ -1,0 +1,14 @@
+html {
+  --nav-bar-width: 200px;
+}
+
+.Root {
+  overflow: hidden;
+}
+
+.Root__top-container {
+  grid-template-areas:
+    'nav-bar now-playing-bar now-playing-bar'
+    'nav-bar main-view buddy-feed';
+  grid-template-rows: auto 1fr;
+}
