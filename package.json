@@ -20,7 +20,7 @@
     "@arkweid/lefthook": "^0.7.7",
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
-    "@vanyauhalin/eslint-config-base": "^0.4.0",
+    "@vanyauhalin/eslint-config-typescript": "^0.5.1",
     "@vanyauhalin/stylelint-config-base": "^0.4.0",
     "eslint": "^8.14.0",
     "postcss": "^8.4.12",
