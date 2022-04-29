@@ -1,0 +1,16 @@
+.main-coverSlotExpanded-container .GlueDropTarget {
+  padding: 0;
+}
+
+.main-coverSlotExpanded-container .GlueDropTarget a {
+  border-radius: 0;
+  column-gap: 0;
+  cursor: default;
+  height: auto;
+  padding: 0;
+}
+
+.main-coverSlotExpanded-container .GlueDropTarget a > div {
+  height: auto;
+  width: auto;
+}
