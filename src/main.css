@@ -3,4 +3,5 @@
 @import './nav/spotify.css';
 @import './nav/playlists.css';
 @import './nav/scrollbar.css';
+@import './nav/expanded.css';
 @import './bar.css';
