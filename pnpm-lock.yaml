@@ -4,6 +4,7 @@ specifiers:
   '@arkweid/lefthook': ^0.7.7
   '@commitlint/cli': ^16.2.3
   '@commitlint/config-conventional': ^16.2.1
+  '@types/w3c-css-typed-object-model-level-1': ^20180410.0.4
   '@vanyauhalin/eslint-config-typescript': ^0.5.1
   '@vanyauhalin/stylelint-config-base': ^0.4.0
   eslint: ^8.14.0
@@ -17,6 +18,7 @@ devDependencies:
   '@arkweid/lefthook': 0.7.7
   '@commitlint/cli': 16.2.3
   '@commitlint/config-conventional': 16.2.1
+  '@types/w3c-css-typed-object-model-level-1': 20180410.0.4
   '@vanyauhalin/eslint-config-typescript': 0.5.1_eslint@8.14.0+typescript@4.6.4
   '@vanyauhalin/stylelint-config-base': 0.4.0_stylelint@14.8.0
   eslint: 8.14.0
@@ -319,6 +321,10 @@ packages:
 
   /@types/parse-json/4.0.0:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
+    dev: true
+
+  /@types/w3c-css-typed-object-model-level-1/20180410.0.4:
+    resolution: {integrity: sha512-qyX4FlHFRsCvXdmrJGyWtV/10nOMsoHaIMqINtMf2bWaOLduHU5Y69NMQwP7hzJOduSBB7t50tCW6AA6VATfCQ==}
     dev: true
 
   /@typescript-eslint/eslint-plugin/5.21.0_ade6595cb7be1524e723c025c098ae5d:

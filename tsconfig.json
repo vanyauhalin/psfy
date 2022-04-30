@@ -16,6 +16,9 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "rootDir": ".",
+    "types": [
+      "w3c-css-typed-object-model-level-1"
+    ],
     "noEmit": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": false,
