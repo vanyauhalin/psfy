@@ -13,7 +13,8 @@
   "author": "Ivan Uhalin <vanyauhalin@gmail.com>",
   "type": "module",
   "scripts": {
-    "build": "node .esbuildrc.js && node .postcssrc.js"
+    "build": "node .esbuildrc.js && node .postcssrc.js",
+    "compile": "tsc -p tsconfig.json"
   },
   "devDependencies": {
     "@arkweid/lefthook": "^0.7.7",
