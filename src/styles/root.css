@@ -38,6 +38,10 @@ html {
   --psfy-scrollbar-width: 15px;
 }
 
+.spotify__container--is-desktop:not(.fullscreen).spotify__os--is-macos .body-drag-top {
+  height: 17px;
+}
+
 .Root {
   overflow: hidden;
 }
