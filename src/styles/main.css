@@ -1,7 +1,7 @@
-@import './general.css';
-@import './nav/general.css';
-@import './nav/spotify.css';
-@import './nav/playlists.css';
-@import './nav/scrollbar.css';
-@import './nav/expanded.css';
+@import './root.css';
+@import './navbar/general.css';
+@import './navbar/spotify.css';
+@import './navbar/playlists.css';
+@import './navbar/scrollbar.css';
+@import './navbar/expanded.css';
 @import './bar.css';

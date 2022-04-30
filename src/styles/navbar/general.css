@@ -1,0 +1,57 @@
+.Root__nav-bar {
+  background-color: var(--psfy-navbar-background-color);
+  max-width: var(--psfy-navbar-max-width);
+  min-width: var(--psfy-navbar-min-width);
+  width: var(--psfy-navbar-width);
+}
+
+.main-navBar-navBar .GlueDropTarget {
+  padding: var(--psfy-navbar-item-padding);
+}
+
+.main-navBar-navBar .GlueDropTarget button,
+.main-navBar-navBar .GlueDropTarget a {
+  border-radius: var(--psfy-navbar-item-border-radius);
+  column-gap: var(--psfy-navbar-item-icon-margin);
+  cursor: default;
+  height: var(--psfy-navbar-item-height);
+  opacity: 1;
+  padding: var(--psfy-navbar-item-inner-padding);
+  transition: none;
+}
+
+.main-navBar-navBar .GlueDropTarget button:not([aria-label]):focus,
+.main-navBar-navBar .GlueDropTarget a[aria-current=page] {
+  background-color: var(--psfy-navbar-item-active-background-color);
+}
+
+.main-navBar-navBar .GlueDropTarget button > div,
+.main-navBar-navBar .GlueDropTarget a > div {
+  height: var(--psfy-navbar-item-icon-size);
+  margin-right: 0;
+  opacity: 1;
+  padding: 0;
+  transition: none;
+  width: var(--psfy-navbar-item-icon-size);
+}
+
+.main-navBar-navBar .GlueDropTarget button > div > div,
+.main-navBar-navBar .GlueDropTarget a > div > div {
+  background-color: transparent;
+  background-image: none;
+  border-radius: 0;
+}
+
+.main-navBar-navBar .GlueDropTarget svg {
+  color: var(--psfy-navbar-item-icon-color);
+}
+
+.main-navBar-navBar .GlueDropTarget span {
+  color: var(--psfy-navbar-item-color);
+  font-family: var(--psfy-navbar-item-font-family);
+  font-size: var(--psfy-navbar-item-font-size);
+  font-weight: var(--psfy-navbar-item-font-weight);
+  letter-spacing: var(--psfy-navbar-item-letter-spacing);
+  opacity: 1;
+  transition: none;
+}

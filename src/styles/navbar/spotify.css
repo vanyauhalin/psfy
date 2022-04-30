@@ -1,0 +1,50 @@
+.main-navBar-entryPoints::before {
+  color: var(--psfy-navbar-heading-color);
+  content: 'Spotify';
+  display: block;
+  font-family: var(--psfy-navbar-heading-font-family);
+  font-size: var(--psfy-navbar-heading-font-size);
+  font-weight: var(--psfy-navbar-heading-font-weight);
+  margin-bottom: var(--psfy-navbar-heading-margin-bottom);
+  padding: var(--psfy-navbar-heading-padding);
+}
+
+.main-navBar-entryPoints a {
+  border-radius: var(--psfy-navbar-item-border-radius);
+  column-gap: var(--psfy-navbar-item-icon-margin);
+  cursor: default;
+  height: var(--psfy-navbar-item-height);
+  padding: var(--psfy-navbar-item-inner-padding);
+  transition: none;
+}
+
+.main-navBar-entryPoints a[aria-current=page] {
+  background-color: var(--psfy-navbar-item-active-background-color);
+}
+
+.main-navBar-entryPoints span {
+  color: var(--psfy-navbar-item-color);
+  font-family: var(--psfy-navbar-item-font-family);
+  font-size: var(--psfy-navbar-item-font-size);
+  font-weight: var(--psfy-navbar-item-font-weight);
+  letter-spacing: var(--psfy-navbar-item-letter-spacing);
+}
+
+.main-navBar-navBarItem {
+  padding: var(--psfy-navbar-item-padding);
+}
+
+.main-navBar-navBarItem .home-icon,
+.main-navBar-navBarItem .home-active-icon,
+.main-navBar-navBarItem .search-icon,
+.main-navBar-navBarItem .search-active-icon,
+.main-navBar-navBarItem .collection-icon,
+.main-navBar-navBarItem .collection-active-icon {
+  color: var(--psfy-navbar-item-icon-color);
+  height: var(--psfy-navbar-item-icon-size);
+  width: var(--psfy-navbar-item-icon-size);
+}
+
+.main-navBar-navBarItem > .GlueDropTarget {
+  padding: 0;
+}
