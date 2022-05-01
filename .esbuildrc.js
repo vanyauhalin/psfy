@@ -5,6 +5,7 @@ const result = buildSync({
   allowOverwrite: true,
   bundle: true,
   entryPoints: [resolve('src/scripts/main.ts')],
+  minify: true,
   outfile: resolve('lib/psfy.js'),
   platform: 'browser',
 });
