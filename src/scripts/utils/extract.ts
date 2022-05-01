@@ -1,12 +1,12 @@
 /**
  * Extracts variables from a element and cached them.
  */
-function extractWrapper(): {
-  (variable: string): string | undefined;
-  force(variable: string): string | undefined;
-} {
+const extract = (() => {
   const cache = new Map<string, string>();
-  function force(variable: string): string | undefined {
+  function inner(variable: string): string | undefined {
+    return cache.has(variable) ? cache.get(variable) : inner.force(variable);
+  }
+  inner.force = (variable: string) => {
     const styles = document.documentElement.computedStyleMap();
     const unparsedValue = styles.get(variable) as CSSUnparsedValue;
     if (unparsedValue) {
@@ -18,17 +18,9 @@ function extractWrapper(): {
       }
     }
     return undefined;
-  }
-  function inner(variable: string): string | undefined {
-    return cache.has(variable)
-      ? cache.get(variable)
-      : force(variable);
-  }
-  inner.force = force;
+  };
   return inner;
-}
-
-const extract = extractWrapper();
+})();
 
 export {
   extract,
