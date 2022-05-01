@@ -4,30 +4,22 @@
 function wait<T extends unknown>(
   expression: () => T | null,
 ): Promise<T> {
-  function check(callback?: () => void): Promise<T> {
-    return new Promise((resolve) => {
-      const some = expression();
+  return new Promise((resolve) => {
+    let some = expression();
+    if (some) {
+      resolve(some);
+      return;
+    }
+    const observer = new MutationObserver(() => {
+      some = expression();
       if (some) {
         resolve(some);
-        return;
-      }
-      if (callback) {
-        callback();
+        observer.disconnect();
       }
     });
-  }
-  return new Promise((resolve) => {
-    check(() => {
-      const observer = new MutationObserver(() => {
-        check().then((some) => {
-          resolve(some);
-          observer.disconnect();
-        });
-      });
-      observer.observe(document.body, {
-        childList: true,
-        subtree: true,
-      });
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
     });
   });
 }
