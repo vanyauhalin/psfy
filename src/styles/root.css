@@ -38,14 +38,3 @@ html {
   --psfy-scrollbar-width: 15px;
   overflow: hidden;
 }
-
-.spotify__container--is-desktop:not(.fullscreen).spotify__os--is-macos .body-drag-top {
-  height: 17px;
-}
-
-.Root__top-container {
-  grid-template-areas:
-    'nav-bar now-playing-bar now-playing-bar'
-    'nav-bar main-view buddy-feed';
-  grid-template-rows: auto 1fr;
-}
