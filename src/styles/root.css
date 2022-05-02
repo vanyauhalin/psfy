@@ -36,14 +36,11 @@ html {
   --psfy-navbar-scrollbar-color: var(--psfy-color-gray-a02);
   --psfy-navbar-width: var(--nav-bar-width);
   --psfy-scrollbar-width: 15px;
+  overflow: hidden;
 }
 
 .spotify__container--is-desktop:not(.fullscreen).spotify__os--is-macos .body-drag-top {
   height: 17px;
-}
-
-.Root {
-  overflow: hidden;
 }
 
 .Root__top-container {
