@@ -106,13 +106,13 @@ function extractDirectory(file) {
  * @param {string | NodeJS.ArrayBufferView} data
  */
 function write(file, data) {
-  const directory = extractDirectory(file);
+  const resolved = resolve(file);
+  const directory = extractDirectory(resolved);
   if (!existsSync(directory)) {
     mkdirSync(directory);
   }
-  writeFileSync(resolve(file), data, {
+  writeFileSync(resolved, data, {
     flag: 'w',
-    recursive: true,
   });
 }
 
