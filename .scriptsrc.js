@@ -9,6 +9,7 @@ import postcssImport from 'postcss-import';
  * Simple log wrapper.
  */
 const log = (() => {
+  let level = 0;
   let state = 'info';
   /**
    * Returns the current time.
@@ -33,8 +34,9 @@ const log = (() => {
    * @returns {void}
    */
   inner.force = (type, message) => {
+    const padding = level ? ' '.repeat(level * 2) : '';
     /* eslint-disable-next-line no-console */
-    console.log(`[${type}] ${time()} ${message}`);
+    console.log(`[${type}] ${time()} ${padding}${message}`);
   };
   /**
    * @param {string} type
@@ -56,6 +58,18 @@ const log = (() => {
    */
   inner.info = (message) => {
     inner.force('info', message);
+  };
+  /**
+   * @returns {void}
+   */
+  inner.up = () => {
+    level += 1;
+  };
+  /**
+   * @returns {void}
+   */
+  inner.down = () => {
+    level -= 1;
   };
   return inner;
 })();
@@ -80,7 +94,9 @@ const scripts = (() => {
   inner.run = (event = process.env.npm_lifecycle_event) => {
     if (store.has(event)) {
       log.info(`Running ${event}`);
+      log.up();
       store.get(event)();
+      log.down();
       log.info(`Finished ${event}`);
       return;
     }
