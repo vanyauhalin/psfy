@@ -80,15 +80,15 @@ const log = (() => {
 const scripts = (() => {
   const store = new Map();
   /**
-   * @param {string} name
-   * @param {() => void} callback
+   * @param {string} event npm event in `package.json`.
+   * @param {() => void} callback callback to run when the event is triggered.
    * @returns {void}
    */
-  function inner(name, callback) {
-    store.set(name, callback);
+  function inner(event, callback) {
+    store.set(event, callback);
   }
   /**
-   * @param {string?} event
+   * @param {string?} event npm event in `package.json`.
    * @returns {void}
    */
   inner.run = (event = process.env.npm_lifecycle_event) => {
