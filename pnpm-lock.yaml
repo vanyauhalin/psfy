@@ -5,7 +5,7 @@ specifiers:
   '@commitlint/cli': ^16.2.3
   '@commitlint/config-conventional': ^16.2.1
   '@types/w3c-css-typed-object-model-level-1': ^20180410.0.4
-  '@vanyauhalin/eslint-config-typescript': ^0.5.1
+  '@vanyauhalin/eslint-config-typescript': ^0.5.2
   '@vanyauhalin/stylelint-config-base': ^0.4.0
   esbuild: ^0.14.38
   eslint: ^8.14.0
@@ -20,7 +20,7 @@ devDependencies:
   '@commitlint/cli': 16.2.3
   '@commitlint/config-conventional': 16.2.1
   '@types/w3c-css-typed-object-model-level-1': 20180410.0.4
-  '@vanyauhalin/eslint-config-typescript': 0.5.1_t725usgvqspm5woeqpaxbfp2qu
+  '@vanyauhalin/eslint-config-typescript': 0.5.2_t725usgvqspm5woeqpaxbfp2qu
   '@vanyauhalin/stylelint-config-base': 0.4.0_stylelint@14.8.0
   esbuild: 0.14.38
   eslint: 8.14.0
@@ -455,9 +455,8 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vanyauhalin/eslint-config-base/0.5.1_eslint@8.14.0:
-    resolution: {integrity: sha512-SjRawNSpolE6w70LxKPn7Z67YnuEjBgo7OX4oBtTwpEu2OIZE8olfNR0cez7hvRdw2r9Wia7JT8T9Z5piltyLQ==, tarball: download/@vanyauhalin/eslint-config-base/0.5.1/e532d732741b4184d3a5b8ead217f4429e77ba53099feebde40e7227b940ff44}
-    engines: {node: '>=12', pnpm: '>=4'}
+  /@vanyauhalin/eslint-config-base/0.5.2_eslint@8.14.0:
+    resolution: {integrity: sha512-vJ7UNRE6Hf7zafKEEpjoapqTDGJjKwy75lZMdaPe7HOam7YNuimSd/R0O2gRIhglyyGTKQRQlRf0zGDexrk0Pg==, tarball: download/@vanyauhalin/eslint-config-base/0.5.2/243848cf2b133b41923eab39864bb6c60768cc759f2584bcc1795166c42db04b}
     peerDependencies:
       eslint: ^7.32.0 || ^8.0.0
     dependencies:
@@ -466,16 +465,15 @@ packages:
       eslint-plugin-import: 2.26.0_eslint@8.14.0
     dev: true
 
-  /@vanyauhalin/eslint-config-typescript/0.5.1_t725usgvqspm5woeqpaxbfp2qu:
-    resolution: {integrity: sha512-ap+lu7aGSM6VgQ+yDc4Tv4KZl+o1oM2YpGPvbRJb+mmg6psQZ1OePjfnKgCAAQNVIm8E4YStvdZhWfiNQrC7/A==, tarball: download/@vanyauhalin/eslint-config-typescript/0.5.1/b310c9abb985807307bd635ed4835c4d59d4fa379d71119c4674f16ccaaddf89}
-    engines: {node: '>=12', pnpm: '>=4'}
+  /@vanyauhalin/eslint-config-typescript/0.5.2_t725usgvqspm5woeqpaxbfp2qu:
+    resolution: {integrity: sha512-UKhFnGJn4iFxej8RU1gJds0SGQ6/97cambUhTOCy81AHlJkNBIukxd1c6T8/dSEZRWtx/w6fRK1iOIW5WgbTnA==, tarball: download/@vanyauhalin/eslint-config-typescript/0.5.2/e6af50f0c037afecbd3a9b1da70777afbdb8a9fae9c62bb8620318e1cb697403}
     peerDependencies:
       eslint: ^7.32.0 || ^8.0.0
       typescript: ^4.0.0
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.21.0_vxtfsxfxxyksjzzdyas4bgfolu
       '@typescript-eslint/parser': 5.21.0_t725usgvqspm5woeqpaxbfp2qu
-      '@vanyauhalin/eslint-config-base': 0.5.1_eslint@8.14.0
+      '@vanyauhalin/eslint-config-base': 0.5.2_eslint@8.14.0
       eslint: 8.14.0
       eslint-config-airbnb-typescript: 17.0.0_rcyowln53crk5cnmj7ekhxkdkq
       eslint-plugin-import: 2.26.0_eslint@8.14.0
