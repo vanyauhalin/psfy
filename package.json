@@ -13,7 +13,10 @@
   "author": "Ivan Uhalin <vanyauhalin@gmail.com>",
   "type": "module",
   "scripts": {
-    "build": "node .esbuildrc.js && node .postcssrc.js",
+    "build": "node .scriptsrc.js",
+    "build-colors": "node .scriptsrc.js",
+    "build-scripts": "node .scriptsrc.js",
+    "build-styles": "node .scriptsrc.js",
     "compile": "tsc -p tsconfig.json"
   },
   "devDependencies": {
