@@ -16,7 +16,7 @@ If take off glasses and cover eyes, it looks like something written in swift.
     <br>
     Spicetify v2.9.7
     <br>
-    psfy v0.1.0
+    psfy v0.2.0
   </sub>
 </p>
 
