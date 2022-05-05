@@ -6,7 +6,7 @@ specifiers:
   '@commitlint/config-conventional': ^16.2.1
   '@types/w3c-css-typed-object-model-level-1': ^20180410.0.4
   '@vanyauhalin/eslint-config-typescript': ^0.5.2
-  '@vanyauhalin/stylelint-config-base': ^0.4.0
+  '@vanyauhalin/stylelint-config-base': ^0.4.3
   chokidar: ^3.5.3
   esbuild: ^0.14.38
   eslint: ^8.14.0
@@ -22,7 +22,7 @@ devDependencies:
   '@commitlint/config-conventional': 16.2.1
   '@types/w3c-css-typed-object-model-level-1': 20180410.0.4
   '@vanyauhalin/eslint-config-typescript': 0.5.2_t725usgvqspm5woeqpaxbfp2qu
-  '@vanyauhalin/stylelint-config-base': 0.4.0_stylelint@14.8.0
+  '@vanyauhalin/stylelint-config-base': 0.4.3_stylelint@14.8.0
   chokidar: 3.5.3
   esbuild: 0.14.38
   eslint: 8.14.0
@@ -486,9 +486,8 @@ packages:
       - supports-color
     dev: true
 
-  /@vanyauhalin/stylelint-config-base/0.4.0_stylelint@14.8.0:
-    resolution: {integrity: sha512-RucgxoPvfgnjXr4Z13bVx30H7f/HQutfchYUZOpeyne4Nt4YjJc0vP3SQpsiKyPdDlP0/aXkn20TgVohGj5iUw==, tarball: download/@vanyauhalin/stylelint-config-base/0.4.0/76dd16e1f28d27607c4029bd1d1a56950d92adb357573701bb38bdcb0e937894}
-    engines: {node: '>=12', pnpm: '>=4'}
+  /@vanyauhalin/stylelint-config-base/0.4.3_stylelint@14.8.0:
+    resolution: {integrity: sha512-wYerivVRtXoKfHxQ6OM9lwu2F/SQhDM2eX04Kro/Db94s/ENIA5fL0nhDbGbpVYeUC0C8pd3IIafeIkdE1ZiIw==, tarball: download/@vanyauhalin/stylelint-config-base/0.4.3/a58be4e6ad34cd49c240715ec571081c4b793ed2e43d387e2876ff5319bf1c5d}
     peerDependencies:
       stylelint: ^14.0.0
     dependencies:
