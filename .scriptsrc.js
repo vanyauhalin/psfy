@@ -276,20 +276,20 @@ scripts('serve', () => {
       isReady = true;
       log.info('Initial scan complete');
     })
-    .on('all', (event, path) => {
+    .on('all', async (event, path) => {
       if (!isReady) return;
       log.type(event)(path);
       switch (extname(path)) {
         case '.css':
-          scripts.run('build-styles');
+          await scripts.run('build-styles');
           installStyles(root);
           break;
         case '.ts':
-          scripts.run('build-scripts');
+          await scripts.run('build-scripts');
           installScripts(root);
           break;
         case '.ini':
-          scripts.run('build-colors');
+          await scripts.run('build-colors');
           installColors(root);
           break;
         default:
