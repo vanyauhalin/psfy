@@ -1,37 +1,37 @@
 .main-navBar-entryPoints::before {
-  color: var(--psfy-navbar-heading-color);
+  color: var(--psfy-cl-gray-07);
   content: 'Spotify';
   display: block;
-  font-family: var(--psfy-navbar-heading-font-family);
-  font-size: var(--psfy-navbar-heading-font-size);
-  font-weight: var(--psfy-navbar-heading-font-weight);
-  margin-bottom: var(--psfy-navbar-heading-margin-bottom);
-  padding: var(--psfy-navbar-heading-padding);
+  font-family: var(--psfy-font-family);
+  font-size: var(--psfy-font-size-03);
+  font-weight: var(--psfy-font-wg-01);
+  margin-bottom: var(--psfy-navbar-heading-mg-b);
+  padding: var(--psfy-navbar-heading-pd);
 }
 
 .main-navBar-entryPoints a {
   border-radius: var(--psfy-navbar-item-border-radius);
-  column-gap: var(--psfy-navbar-item-icon-margin);
+  column-gap: var(--psfy-navbar-item-icon-mg);
   cursor: default;
   height: var(--psfy-navbar-item-height);
-  padding: var(--psfy-navbar-item-inner-padding);
+  padding: var(--psfy-navbar-item-inner-pd);
   transition: none;
 }
 
 .main-navBar-entryPoints a[aria-current=page] {
-  background-color: var(--psfy-navbar-item-active-background-color);
+  background-color: var(--psfy-cl-gray-a01);
 }
 
 .main-navBar-entryPoints span {
-  color: var(--psfy-navbar-item-color);
-  font-family: var(--psfy-navbar-item-font-family);
-  font-size: var(--psfy-navbar-item-font-size);
-  font-weight: var(--psfy-navbar-item-font-weight);
-  letter-spacing: var(--psfy-navbar-item-letter-spacing);
+  color: var(--psfy-cl-gray-11);
+  font-family: var(--psfy-font-family);
+  font-size: var(--psfy-font-size-01);
+  font-weight: var(--psfy-font-wg-03);
+  letter-spacing: var(--psfy-letter-spacing);
 }
 
 .main-navBar-navBarItem {
-  padding: var(--psfy-navbar-item-padding);
+  padding: var(--psfy-navbar-item-pd);
 }
 
 .main-navBar-navBarItem .home-icon,
@@ -40,7 +40,7 @@
 .main-navBar-navBarItem .search-active-icon,
 .main-navBar-navBarItem .collection-icon,
 .main-navBar-navBarItem .collection-active-icon {
-  color: var(--psfy-navbar-item-icon-color);
+  color: var(--psfy-cl-accent);
   height: var(--psfy-navbar-item-icon-size);
   width: var(--psfy-navbar-item-icon-size);
 }

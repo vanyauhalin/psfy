@@ -1,28 +1,21 @@
-.Root__nav-bar {
-  background-color: var(--psfy-navbar-background-color);
-  max-width: var(--psfy-navbar-max-width);
-  min-width: var(--psfy-navbar-min-width);
-  width: var(--psfy-navbar-width);
-}
-
 .main-navBar-navBar .GlueDropTarget {
-  padding: var(--psfy-navbar-item-padding);
+  padding: var(--psfy-navbar-item-pd);
 }
 
 .main-navBar-navBar .GlueDropTarget button,
 .main-navBar-navBar .GlueDropTarget a {
   border-radius: var(--psfy-navbar-item-border-radius);
-  column-gap: var(--psfy-navbar-item-icon-margin);
+  column-gap: var(--psfy-navbar-item-icon-mg);
   cursor: default;
   height: var(--psfy-navbar-item-height);
   opacity: 1;
-  padding: var(--psfy-navbar-item-inner-padding);
+  padding: var(--psfy-navbar-item-inner-pd);
   transition: none;
 }
 
 .main-navBar-navBar .GlueDropTarget button:not([aria-label]):focus,
 .main-navBar-navBar .GlueDropTarget a[aria-current=page] {
-  background-color: var(--psfy-navbar-item-active-background-color);
+  background-color: var(--psfy-cl-gray-a01);
 }
 
 .main-navBar-navBar .GlueDropTarget button > div,
@@ -43,15 +36,15 @@
 }
 
 .main-navBar-navBar .GlueDropTarget svg {
-  color: var(--psfy-navbar-item-icon-color);
+  color: var(--psfy-cl-accent);
 }
 
 .main-navBar-navBar .GlueDropTarget span {
-  color: var(--psfy-navbar-item-color);
-  font-family: var(--psfy-navbar-item-font-family);
-  font-size: var(--psfy-navbar-item-font-size);
-  font-weight: var(--psfy-navbar-item-font-weight);
-  letter-spacing: var(--psfy-navbar-item-letter-spacing);
+  color: var(--psfy-cl-gray-11);
+  font-family: var(--psfy-font-family);
+  font-size: var(--psfy-font-size-01);
+  font-weight: var(--psfy-font-wg-03);
+  letter-spacing: var(--psfy-letter-spacing);
   opacity: 1;
   transition: none;
 }

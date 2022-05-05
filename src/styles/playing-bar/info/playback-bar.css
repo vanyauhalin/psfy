@@ -17,8 +17,8 @@
 .main-playbackBarRemainingTime-container {
   display: none;
   font-family: var(--psfy-font-family);
-  font-size: var(--psfy-font-size-001);
-  font-weight: var(--psfy-font-weight-01);
+  font-size: var(--psfy-font-size-04);
+  font-weight: var(--psfy-font-wg-03);
   grid-row: 1;
   letter-spacing: var(--psfy-letter-spacing);
 }
@@ -47,21 +47,21 @@
 }
 
 .playback-bar .progress-bar {
-  --fg-color: var(--psfy-color-gray-07);
-  --is-active-fg-color: var(--psfy-color-gray-07);
+  --fg-color: var(--psfy-cl-gray-09);
+  --is-active-fg-color: var(--psfy-cl-gray-09);
   --progress-bar-height: var(--psfy-playing-bar-progress-bar-hg);
   --progress-bar-radius: 0;
 }
 
 .playback-bar .x-progressBar-progressBarBg {
-  background-color: var(--psfy-color-gray-04);
+  background-color: var(--psfy-cl-gray-04);
   top: calc(100% - var(--psfy-playing-bar-progress-bar-hg));
   transform: none;
 }
 
 .playback-bar .progress-bar__slider {
-  background-color: var(--psfy-color-gray-07);
-  border: solid 1px var(--psfy-color-white);
+  background-color: var(--psfy-cl-gray-09);
+  border: solid 1px var(--psfy-cl-white);
   border-bottom: 0;
   border-radius: 3px 3px 0 0;
   box-shadow: none;

@@ -1,0 +1,19 @@
+html {
+  --psfy-navbar-heading-mg-b: 4px;
+  --psfy-navbar-heading-pd: 0 16px;
+  --psfy-navbar-item-border-radius: 6px;
+  --psfy-navbar-item-height: 28px;
+  --psfy-navbar-item-icon-mg: 10px;
+  --psfy-navbar-item-icon-size: 16px;
+  --psfy-navbar-item-inner-pd: 0 12px;
+  --psfy-navbar-item-pd: 0 10px;
+  --psfy-navbar-max-wd: 260px;
+  --psfy-navbar-min-wd: 200px;
+}
+
+.Root__nav-bar {
+  background-color: var(--psfy-cl-gray-02);
+  max-width: var(--psfy-navbar-max-wd);
+  min-width: var(--psfy-navbar-min-wd);
+  width: var(--nav-bar-width);
+}
