@@ -1,0 +1,18 @@
+.main-nowPlayingBar-center,
+.player-controls {
+  display: contents;
+}
+
+.player-controls__buttons {
+  gap: var(--psfy-playing-bar-button-gap);
+  grid-area: controls;
+  margin-bottom: 0;
+}
+
+.player-controls__left {
+  gap: var(--psfy-playing-bar-button-gap);
+}
+
+.player-controls__right {
+  gap: var(--psfy-playing-bar-button-gap);
+}

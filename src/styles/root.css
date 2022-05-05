@@ -1,28 +1,41 @@
 html {
   --psfy-color-accent: hsl(141 73% 42%);
-  --psfy-color-gray-01: hsl(120 2% 90%);
-  --psfy-color-gray-02: hsl(0 0% 67%);
-  --psfy-color-gray-03: hsl(0 0% 24%);
+  --psfy-color-gray-01: hsl(0 0% 95%);
+  --psfy-color-gray-02: hsl(0 0% 90%);
+  --psfy-color-gray-03: hsl(0 0% 85%);
+  --psfy-color-gray-04: hsl(240 0% 82%);
+  --psfy-color-gray-003: hsl(0 0% 75%);
+  --psfy-color-gray-004: hsl(0 0% 70%);
+  --psfy-color-gray-05: hsl(0 0% 67%);
+  --psfy-color-gray-06: hsl(240 0% 50%);
+  --psfy-color-gray-07: hsl(240 0% 46%);
+  --psfy-color-gray-08: hsl(240 0% 40%);
+  --psfy-color-gray-09: hsl(0 0% 24%);
+  --psfy-color-gray-10: hsl(0 0% 19%);
+  --psfy-color-gray-11: hsl(0 0% 13%);
   --psfy-color-gray-a01: hsla(0 0% 74% / .65);
   --psfy-color-gray-a02: hsla(0 0% 50% / .65);
   --psfy-color-white: hsl(0 0% 100%);
   --psfy-font-family: system-ui;
-  --psfy-font-size-normal: .8125rem;
-  --psfy-font-size-small: .6875rem;
+  --psfy-font-size-001: .625rem;
+  --psfy-font-size-01: .6875rem;
+  --psfy-font-size-02: .7125rem;
+  --psfy-font-size-03: .8125rem;
   --psfy-icon-size-small: 16px;
   --psfy-letter-spacing: -.025rem;
-  --psfy-navbar-background-color: var(--psfy-color-gray-01);
-  --psfy-navbar-heading-color: var(--psfy-color-gray-02);
+  --psfy-font-weight-01: 500;
+  --psfy-navbar-background-color: var(--psfy-color-gray-02);
+  --psfy-navbar-heading-color: var(--psfy-color-gray-05);
   --psfy-navbar-heading-font-family: var(--psfy-font-family);
-  --psfy-navbar-heading-font-size: var(--psfy-font-size-small);
+  --psfy-navbar-heading-font-size: var(--psfy-font-size-01);
   --psfy-navbar-heading-font-weight: bold;
   --psfy-navbar-heading-margin-bottom: 4px;
   --psfy-navbar-heading-padding: 0 16px;
   --psfy-navbar-item-active-background-color: var(--psfy-color-gray-a01);
   --psfy-navbar-item-border-radius: 6px;
-  --psfy-navbar-item-color: var(--psfy-color-gray-03);
+  --psfy-navbar-item-color: var(--psfy-color-gray-09);
   --psfy-navbar-item-font-family: var(--psfy-font-family);
-  --psfy-navbar-item-font-size: var(--psfy-font-size-normal);
+  --psfy-navbar-item-font-size: var(--psfy-font-size-03);
   --psfy-navbar-item-font-weight: 500;
   --psfy-navbar-item-height: 28px;
   --psfy-navbar-item-icon-color: var(--psfy-color-accent);
@@ -37,4 +50,15 @@ html {
   --psfy-navbar-width: var(--nav-bar-width);
   --psfy-scrollbar-width: 15px;
   overflow: hidden;
+}
+
+.spotify__container--is-desktop:not(.fullscreen).spotify__os--is-macos .body-drag-top {
+  height: 17px;
+}
+
+.Root__top-container {
+  grid-template-areas:
+    'nav-bar now-playing-bar now-playing-bar'
+    'nav-bar main-view buddy-feed';
+  grid-template-rows: auto 1fr;
 }

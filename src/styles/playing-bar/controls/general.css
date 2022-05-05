@@ -1,0 +1,113 @@
+.main-shuffleButton-button,
+.main-skipBackButton-button,
+.main-skipForwardButton-button,
+.main-repeatButton-button {
+  /* Overwrite inline styles */
+  /* stylelint-disable-next-line declaration-no-important */
+  --button-size: auto !important;
+  border-radius: var(--psfy-playing-bar-button-border-radius);
+  color: var(--psfy-color-gray-08);
+  padding: var(--psfy-playing-bar-button-pd);
+}
+
+.main-shuffleButton-button:not([disabled]):hover,
+.main-skipBackButton-button:not([disabled]):hover,
+.main-skipForwardButton-button:not([disabled]):hover,
+.main-repeatButton-button:not([disabled]):hover {
+  background-color: var(--psfy-color-gray-01);
+  color: var(--psfy-color-gray-08);
+}
+
+.main-shuffleButton-button:not([disabled]):focus,
+.main-skipBackButton-button:not([disabled]):focus,
+.main-skipForwardButton-button:not([disabled]):focus,
+.main-repeatButton-button:not([disabled]):focus {
+  color: var(--psfy-color-gray-08);
+}
+
+.main-shuffleButton-button:not([disabled]):focus-visible,
+.main-skipBackButton-button:not([disabled]):focus-visible,
+.main-skipForwardButton-button:not([disabled]):focus-visible,
+.main-repeatButton-button:not([disabled]):focus-visible {
+  background-color: var(--psfy-color-gray-01);
+}
+
+.main-shuffleButton-button:not([disabled]):hover:active,
+.main-shuffleButton-button:not([disabled]):focus:active,
+.main-skipBackButton-button:not([disabled]):hover:active,
+.main-skipBackButton-button:not([disabled]):focus:active,
+.main-skipForwardButton-button:not([disabled]):hover:active,
+.main-skipForwardButton-button:not([disabled]):focus:active,
+.main-repeatButton-button:not([disabled]):hover:active,
+.main-repeatButton-button:not([disabled]):focus:active {
+  background-color: var(--psfy-color-gray-02);
+  color: var(--psfy-color-gray-11);
+}
+
+.main-shuffleButton-button:not([disabled]):focus:not(:focus-visible):not(:hover),
+.main-skipBackButton-button:not([disabled]):focus:not(:focus-visible):not(:hover),
+.main-skipForwardButton-button:not([disabled]):focus:not(:focus-visible):not(:hover),
+.main-repeatButton-button:not([disabled]):focus:not(:focus-visible):not(:hover) {
+  color: var(--psfy-color-gray-08);
+}
+
+.main-shuffleButton-button[aria-checked=true],
+.main-skipBackButton-button[aria-checked=true],
+.main-skipForwardButton-button[aria-checked=true],
+.main-repeatButton-button[aria-checked=true],
+.main-repeatButton-button[aria-checked=mixed] {
+  background-color: var(--psfy-color-gray-01);
+  color: var(--psfy-color-gray-08);
+}
+
+.main-shuffleButton-button[aria-checked=true]:not([disabled]):hover,
+.main-shuffleButton-button[aria-checked=true]:not([disabled]):focus,
+.main-skipBackButton-button[aria-checked=true]:not([disabled]):hover,
+.main-skipBackButton-button[aria-checked=true]:not([disabled]):focus,
+.main-skipForwardButton-button[aria-checked=true]:not([disabled]):hover,
+.main-skipForwardButton-button[aria-checked=true]:not([disabled]):focus,
+.main-repeatButton-button[aria-checked=true]:not([disabled]):hover,
+.main-repeatButton-button[aria-checked=true]:not([disabled]):focus,
+.main-repeatButton-button[aria-checked=mixed]:not([disabled]):hover,
+.main-repeatButton-button[aria-checked=mixed]:not([disabled]):focus {
+  background-color: var(--psfy-color-gray-02);
+  color: var(--psfy-color-gray-08);
+}
+
+.main-shuffleButton-button[aria-checked=true]:not([disabled]):hover:active,
+.main-shuffleButton-button[aria-checked=true]:not([disabled]):focus:active,
+.main-skipBackButton-button[aria-checked=true]:not([disabled]):hover:active,
+.main-skipBackButton-button[aria-checked=true]:not([disabled]):focus:active,
+.main-skipForwardButton-button[aria-checked=true]:not([disabled]):hover:active,
+.main-skipForwardButton-button[aria-checked=true]:not([disabled]):focus:active,
+.main-repeatButton-button[aria-checked=true]:not([disabled]):hover:active,
+.main-repeatButton-button[aria-checked=true]:not([disabled]):focus:active,
+.main-repeatButton-button[aria-checked=mixed]:not([disabled]):hover:active,
+.main-repeatButton-button[aria-checked=mixed]:not([disabled]):focus:active {
+  background-color: var(--psfy-color-gray-03);
+  color: var(--psfy-color-gray-11);
+}
+
+.main-shuffleButton-button[aria-checked=true]:not([disabled]):focus:not(:focus-visible):not(:hover),
+.main-skipBackButton-button[aria-checked=true]:not([disabled]):focus:not(:focus-visible):not(:hover),
+.main-skipForwardButton-button[aria-checked=true]:not([disabled]):focus:not(:focus-visible):not(:hover),
+.main-repeatButton-button[aria-checked=true]:not([disabled]):focus:not(:focus-visible):not(:hover),
+.main-repeatButton-button[aria-checked=mixed]:not([disabled]):focus:not(:focus-visible):not(:hover) {
+  color: var(--psfy-color-gray-08);
+}
+
+.main-shuffleButton-button[aria-checked=true]::after,
+.main-skipBackButton-button[aria-checked=true]::after,
+.main-skipForwardButton-button[aria-checked=true]::after,
+.main-repeatButton-button[aria-checked=true]::after,
+.main-repeatButton-button[aria-checked=mixed]::after {
+  display: none;
+}
+
+.main-shuffleButton-button svg,
+.main-skipBackButton-button svg,
+.main-skipForwardButton-button svg,
+.main-repeatButton-button svg {
+  height: var(--psfy-playing-bar-button-icon-size);
+  width: var(--psfy-playing-bar-button-icon-size);
+}

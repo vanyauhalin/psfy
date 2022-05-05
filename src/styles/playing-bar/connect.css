@@ -1,0 +1,91 @@
+.connect-device-list-container {
+  box-shadow: none;
+  right: 0;
+  top: calc(100% - 5px + 12.5px);
+}
+
+.connect-device-list-container::before {
+  display: none;
+}
+
+.connect-device-list-container--is-visible {
+  animation: none;
+}
+
+.connect-device-list-content {
+  border: var(--psfy-border);
+  border-radius: 10px 0 10px 10px;
+  margin-top: 5px;
+  padding: 0;
+}
+
+.connect-title,
+.connect-header {
+  display: none;
+}
+
+.connect-device-list {
+  margin: 0;
+}
+
+.connect-device-list-item {
+  background-color: hsl(0 0% 100%);
+  column-gap: calc(14px - 7px);
+  padding: 8px 14px 8px calc(14px - 7px);
+}
+
+.connect-device-list-item:hover,
+.connect-device-list-item:focus {
+  background-color: hsl(0 0% 100%);
+}
+
+.connect-device-list-item__icon {
+  border-radius: var(--psfy-playing-bar-button-border-radius);
+  color: var(--psfy-color-gray-08);
+  display: flex;
+  padding: var(--psfy-playing-bar-button-pd);
+}
+
+.connect-device-list-item--active .connect-device-list-item__icon {
+  background-color: var(--psfy-color-gray-01);
+  color: var(--psfy-color-gray-08);
+}
+
+.connect-device-list-item:hover .connect-device-list-item__icon,
+.connect-device-list-item:focus .connect-device-list-item__icon {
+  background-color: var(--psfy-color-gray-01);
+  color: var(--psfy-color-gray-08);
+}
+
+.connect-device-list-item:hover:active .connect-device-list-item__icon,
+.connect-device-list-item:focus:active .connect-device-list-item__icon {
+  background-color: var(--psfy-color-gray-02);
+  color: var(--psfy-color-gray-11);
+}
+
+.connect-device-list-item__icon svg {
+  height: 18px;
+  width: 18px;
+}
+
+.connect-device-title-hifi-container {
+  padding-bottom: 0;
+}
+
+.connect-device-list-item .connect-device-list-item__device-subtitle {
+  color: var(--psfy-color-gray-08);
+  font-family: var(--psfy-font-family);
+  font-size: var(--psfy-font-size-02);
+  font-weight: var(--psfy-playing-bar-info-name-font-wg);
+}
+
+.connect-device-list-item__info span {
+  color: var(--psfy-color-gray-06);
+  font-family: var(--psfy-font-family);
+  font-size: var(--psfy-font-size-02);
+  font-weight: var(--psfy-playing-bar-info-artists-font-wg);
+}
+
+.connect-device-list-item__info svg {
+  color: var(--psfy-color-gray-06);
+}

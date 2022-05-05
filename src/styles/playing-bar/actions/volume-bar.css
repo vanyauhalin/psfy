@@ -1,0 +1,41 @@
+.volume-bar {
+  display: contents;
+}
+
+.volume-bar .playback-progressbar {
+  margin: 0 auto;
+  order: -2;
+  width: 70px;
+}
+
+.volume-bar .progress-bar {
+  --fg-color: var(--psfy-color-gray-003);
+  --is-active-fg-color: var(--psfy-color-gray-003);
+  --progress-bar-height: 3px;
+}
+
+.volume-bar .x-progressBar-progressBarBg {
+  background-color: var(--psfy-color-gray-01);
+  border: solid 1px var(--psfy-color-gray-02);
+}
+
+.volume-bar .x-progressBar-progressBarBg > div > div {
+  border: solid 1px var(--psfy-color-gray-004);
+  margin-left: -1px;
+  margin-right: -1px;
+  margin-top: -1px;
+  transform: none;
+  width: calc(var(--progress-bar-transform) + 1px * 2);
+}
+
+.volume-bar .x-progressBar-progressBarBg > div:not(.progress-bar__slider) {
+  overflow: visible;
+}
+
+.volume-bar .progress-bar__slider {
+  border: solid 1px var(--psfy-color-gray-003);
+  box-shadow: none;
+  display: block;
+  height: 13px;
+  width: 13px;
+}
