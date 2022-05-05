@@ -1,0 +1,20 @@
+.main-coverSlotCollapsed-container {
+  margin-bottom: calc(var(--psfy-playing-bar-progress-bar-hg) * -1);
+  transition: var(--psfy-playing-bar-info-transition);
+}
+
+.main-nowPlayingWidget-coverExpanded .main-coverSlotCollapsed-container {
+  transform: var(--psfy-playing-bar-info-transform);
+}
+
+.main-nowPlayingWidget-coverArt .cover-art:not(.cover-art-image) {
+  /* Overwrite inline styles */
+  /* stylelint-disable-next-line declaration-no-important */
+  height: var(--psfy-playing-bar-info-cover-size) !important;
+  /* stylelint-disable-next-line declaration-no-important */
+  width: var(--psfy-playing-bar-info-cover-size) !important;
+}
+
+.main-nowPlayingWidget-coverArt .cover-art.shadow {
+  box-shadow: none;
+}

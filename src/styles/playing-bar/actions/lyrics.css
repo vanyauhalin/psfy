@@ -1,0 +1,58 @@
+.control-button[aria-label=Lyrics] {
+  border-radius: var(--psfy-playing-bar-button-border-radius);
+  color: var(--psfy-color-gray-08);
+  display: flex;
+  height: auto;
+  min-width: auto;
+  padding: var(--psfy-playing-bar-button-pd);
+  width: auto;
+}
+
+.control-button[aria-label=Lyrics]:hover {
+  background-color: var(--psfy-color-gray-01);
+  color: var(--psfy-color-gray-08);
+}
+
+.control-button[aria-label=Lyrics]:focus-visible {
+  background-color: var(--psfy-color-gray-01);
+}
+
+.control-button[aria-label=Lyrics]:hover:active,
+.control-button[aria-label=Lyrics]:focus:active {
+  background-color: var(--psfy-color-gray-02);
+  color: var(--psfy-color-gray-11);
+}
+
+.control-button[aria-label=Lyrics].control-button--active {
+  background-color: var(--psfy-color-gray-01);
+
+  /* Overwrite control-button--active important */
+  /* stylelint-disable-next-line declaration-no-important */
+  color: var(--psfy-color-gray-08) !important;
+}
+
+.control-button[aria-label=Lyrics].control-button--active:hover {
+  background-color: var(--psfy-color-gray-02);
+
+  /* Overwrite control-button--active important */
+  /* stylelint-disable-next-line declaration-no-important */
+  color: var(--psfy-color-gray-08) !important;
+}
+
+.control-button[aria-label=Lyrics].control-button--active:focus-visible {
+  background-color: var(--psfy-color-gray-02);
+}
+
+.control-button[aria-label=Lyrics].control-button--active:hover:active,
+.control-button[aria-label=Lyrics].control-button--active:focus:active {
+  background-color: var(--psfy-color-gray-03);
+
+  /* Overwrite control-button--active important */
+  /* stylelint-disable-next-line declaration-no-important */
+  color: var(--psfy-color-gray-11) !important;
+}
+
+.control-button[aria-label=Lyrics] svg {
+  height: var(--psfy-playing-bar-button-icon-size);
+  width: var(--psfy-playing-bar-button-icon-size);
+}

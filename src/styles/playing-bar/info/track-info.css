@@ -1,0 +1,46 @@
+.main-trackInfo-container {
+  margin: 0 10px;
+  overflow: hidden;
+  transition: var(--psfy-playing-bar-info-transition);
+  width: 100%;
+}
+
+.main-nowPlayingWidget-coverExpanded .main-trackInfo-container {
+  transform: var(--psfy-playing-bar-info-transform);
+}
+
+.main-nowPlayingBar-left:hover .main-trackInfo-container {
+  margin: 0 var(--psfy-playing-bar-info-hover-margin-x);
+}
+
+.main-trackInfo-name a {
+  color: var(--psfy-color-gray-10);
+  cursor: default;
+  font-family: var(--psfy-font-family);
+  font-size: var(--psfy-font-size-02);
+  font-weight: var(--psfy-playing-bar-info-name-font-wg);
+}
+
+.main-trackInfo-name > div::before,
+.main-trackInfo-name > div::after {
+  display: none;
+}
+
+.main-trackInfo-artists a {
+  color: var(--psfy-color-gray-06);
+  cursor: default;
+  font-family: var(--psfy-font-family);
+  font-size: var(--psfy-font-size-02);
+  font-weight: var(--psfy-playing-bar-info-artists-font-wg);
+}
+
+.main-trackInfo-artists a:hover,
+.main-trackInfo-artists a:link,
+.main-trackInfo-artists a:visited {
+  color: var(--psfy-color-gray-06);
+}
+
+.main-trackInfo-artists > div::before,
+.main-trackInfo-artists > div::after {
+  display: none;
+}

@@ -1,0 +1,16 @@
+.main-nowPlayingBar-left {
+  border: var(--psfy-border);
+  border-radius: 2px;
+  grid-area: info;
+  overflow: hidden;
+  width: 100%;
+}
+
+.main-nowPlayingWidget-nowPlaying {
+  padding-bottom: var(--psfy-playing-bar-progress-bar-hg);
+  transition: none;
+}
+
+.main-nowPlayingWidget-coverExpanded {
+  transform: none;
+}

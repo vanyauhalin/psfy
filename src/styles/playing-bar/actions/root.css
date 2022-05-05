@@ -1,0 +1,8 @@
+.main-nowPlayingBar-right {
+  grid-area: actions;
+  width: 100%;
+}
+
+.main-nowPlayingBar-right > div {
+  gap: var(--psfy-playing-bar-button-gap);
+}

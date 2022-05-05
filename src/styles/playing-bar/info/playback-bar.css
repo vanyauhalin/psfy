@@ -1,0 +1,76 @@
+.playback-bar {
+  align-self: end;
+  display: grid;
+  gap: 0;
+  grid-area: info;
+  margin: 0 var(--psfy-border-wg) var(--psfy-border-wg) auto;
+  transition: var(--psfy-playing-bar-info-transition);
+  transition-property: width;
+  width: calc(100% - var(--psfy-playing-bar-info-cover-size) - var(--psfy-border-wg) * 2);
+}
+
+.psfy-playback-bar-expanded {
+  width: calc(100% - var(--psfy-border-wg) * 2);
+}
+
+.playback-bar__progress-time-elapsed,
+.main-playbackBarRemainingTime-container {
+  display: none;
+  font-family: var(--psfy-font-family);
+  font-size: var(--psfy-font-size-001);
+  font-weight: var(--psfy-font-weight-01);
+  grid-row: 1;
+  letter-spacing: var(--psfy-letter-spacing);
+}
+
+.playback-bar__progress-time-elapsed {
+  grid-column: 1;
+  padding-left: 6px;
+  text-align: start;
+}
+
+.main-playbackBarRemainingTime-container {
+  grid-column: 3;
+  padding-right: 6px;
+  text-align: end;
+}
+
+.main-nowPlayingBar-left:hover + .main-nowPlayingBar-center .playback-bar__progress-time-elapsed,
+.main-nowPlayingBar-left:hover + .main-nowPlayingBar-center .main-playbackBarRemainingTime-container {
+  display: block;
+}
+
+.playback-bar .playback-progressbar {
+  grid-column: 1 / 4;
+  grid-row: 2;
+  height: var(--psfy-playing-bar-progress-bar-hg);
+}
+
+.playback-bar .progress-bar {
+  --fg-color: var(--psfy-color-gray-07);
+  --is-active-fg-color: var(--psfy-color-gray-07);
+  --progress-bar-height: var(--psfy-playing-bar-progress-bar-hg);
+  --progress-bar-radius: 0;
+}
+
+.playback-bar .x-progressBar-progressBarBg {
+  background-color: var(--psfy-color-gray-04);
+  top: calc(100% - var(--psfy-playing-bar-progress-bar-hg));
+  transform: none;
+}
+
+.playback-bar .progress-bar__slider {
+  background-color: var(--psfy-color-gray-07);
+  border: solid 1px var(--psfy-color-white);
+  border-bottom: 0;
+  border-radius: 3px 3px 0 0;
+  box-shadow: none;
+  height: 8px;
+  top: calc(-100% - 1px * 2);
+  transform: translateX(50%);
+  width: 6px;
+}
+
+.main-nowPlayingBar-left:hover + .main-nowPlayingBar-center .playback-bar .progress-bar__slider {
+  display: block;
+}

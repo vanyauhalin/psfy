@@ -1,0 +1,18 @@
+.control-button-heart[aria-checked=false],
+.control-button-heart[aria-checked=false]:hover,
+.control-button-heart[aria-checked=false]:focus {
+  color: var(--psfy-color-gray-08);
+}
+
+.control-button-heart[aria-checked=true] {
+  color: var(--psfy-color-accent);
+}
+
+.main-nowPlayingBar-left:hover .control-button-heart {
+  margin-right: var(--psfy-playing-bar-info-hover-margin-x);
+}
+
+/* .control-button svg {
+  height: 18px;
+  width: 18px;
+} */
