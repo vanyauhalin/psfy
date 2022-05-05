@@ -10,14 +10,14 @@
 }
 
 .main-navBar-entryPoints + div hr::before {
-  color: var(--psfy-navbar-heading-color);
+  color: var(--psfy-cl-gray-07);
   content: 'Playlists';
   display: block;
-  font-family: var(--psfy-navbar-heading-font-family);
-  font-size: var(--psfy-navbar-heading-font-size);
-  font-weight: var(--psfy-navbar-heading-font-weight);
-  margin-bottom: var(--psfy-navbar-heading-margin-bottom);
-  padding: var(--psfy-navbar-heading-padding);
+  font-family: var(--psfy-font-family);
+  font-size: var(--psfy-font-size-03);
+  font-weight: var(--psfy-font-wg-01);
+  margin-bottom: var(--psfy-navbar-heading-mg-b);
+  padding: var(--psfy-navbar-heading-pd);
 }
 
 .main-navBar-entryPoints + div hr + div {

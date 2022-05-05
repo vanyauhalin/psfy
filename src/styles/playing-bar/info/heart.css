@@ -1,11 +1,11 @@
 .control-button-heart[aria-checked=false],
 .control-button-heart[aria-checked=false]:hover,
 .control-button-heart[aria-checked=false]:focus {
-  color: var(--psfy-color-gray-08);
+  color: var(--psfy-cl-gray-10);
 }
 
 .control-button-heart[aria-checked=true] {
-  color: var(--psfy-color-accent);
+  color: var(--psfy-cl-accent);
 }
 
 .main-nowPlayingBar-left:hover .control-button-heart {

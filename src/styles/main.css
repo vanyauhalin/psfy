@@ -1,4 +1,5 @@
 @import './root.css';
+@import './navbar/root.css';
 @import './navbar/general.css';
 @import './navbar/spotify.css';
 @import './navbar/playlists.css';

@@ -14,11 +14,11 @@
 }
 
 .main-trackInfo-name a {
-  color: var(--psfy-color-gray-10);
+  color: var(--psfy-cl-gray-12);
   cursor: default;
   font-family: var(--psfy-font-family);
   font-size: var(--psfy-font-size-02);
-  font-weight: var(--psfy-playing-bar-info-name-font-wg);
+  font-weight: var(--psfy-font-wg-02);
 }
 
 .main-trackInfo-name > div::before,
@@ -27,17 +27,17 @@
 }
 
 .main-trackInfo-artists a {
-  color: var(--psfy-color-gray-06);
+  color: var(--psfy-cl-gray-08);
   cursor: default;
   font-family: var(--psfy-font-family);
   font-size: var(--psfy-font-size-02);
-  font-weight: var(--psfy-playing-bar-info-artists-font-wg);
+  font-weight: var(--psfy-font-wg-03);
 }
 
 .main-trackInfo-artists a:hover,
 .main-trackInfo-artists a:link,
 .main-trackInfo-artists a:visited {
-  color: var(--psfy-color-gray-06);
+  color: var(--psfy-cl-gray-08);
 }
 
 .main-trackInfo-artists > div::before,

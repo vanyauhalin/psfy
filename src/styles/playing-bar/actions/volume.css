@@ -1,7 +1,7 @@
 .control-button[aria-label=Mute],
 .control-button[aria-label=Unmute] {
   border-radius: var(--psfy-playing-bar-button-border-radius);
-  color: var(--psfy-color-gray-08);
+  color: var(--psfy-cl-gray-10);
   display: flex;
   height: auto;
   min-width: auto;
@@ -11,41 +11,41 @@
 }
 
 .control-button[aria-label=Mute]:hover {
-  background-color: var(--psfy-color-gray-01);
-  color: var(--psfy-color-gray-08);
+  background-color: var(--psfy-cl-gray-01);
+  color: var(--psfy-cl-gray-10);
 }
 
 .control-button[aria-label=Mute]:focus-visible {
-  background-color: var(--psfy-color-gray-01);
+  background-color: var(--psfy-cl-gray-01);
 }
 
 .control-button[aria-label=Unmute] {
-  background-color: var(--psfy-color-gray-01);
+  background-color: var(--psfy-cl-gray-01);
 
   /* Overwrite control-button--active important */
   /* stylelint-disable-next-line declaration-no-important */
-  color: var(--psfy-color-gray-08) !important;
+  color: var(--psfy-cl-gray-10) !important;
 }
 
 .control-button[aria-label=Unmute]:hover {
-  background-color: var(--psfy-color-gray-02);
+  background-color: var(--psfy-cl-gray-02);
 
   /* Overwrite control-button--active important */
   /* stylelint-disable-next-line declaration-no-important */
-  color: var(--psfy-color-gray-08) !important;
+  color: var(--psfy-cl-gray-10) !important;
 }
 
 .control-button[aria-label=Unmute]:focus-visible {
-  background-color: var(--psfy-color-gray-02);
+  background-color: var(--psfy-cl-gray-02);
 }
 
 .control-button[aria-label=Unmute]:hover:active,
 .control-button[aria-label=Unmute]:focus:active {
-  background-color: var(--psfy-color-gray-03);
+  background-color: var(--psfy-cl-gray-03);
 
   /* Overwrite control-button--active important */
   /* stylelint-disable-next-line declaration-no-important */
-  color: var(--psfy-color-gray-11) !important;
+  color: var(--psfy-cl-gray-13) !important;
 }
 
 .control-button[aria-label=Mute] svg,

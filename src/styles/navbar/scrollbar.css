@@ -13,9 +13,9 @@
 }
 
 .os-content > ul > div > :nth-child(2)::-webkit-scrollbar {
-  width: var(--psfy-scrollbar-width);
+  width: 15px;
 }
 
 .os-content > ul > div > :nth-child(2)::-webkit-scrollbar-thumb {
-  background-color: var(--psfy-navbar-scrollbar-color);
+  background-color: var(--psfy-cl-gray-a02);
 }

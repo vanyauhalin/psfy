@@ -1,7 +1,7 @@
 .connect-device-list-container {
   box-shadow: none;
   right: 0;
-  top: calc(100% - 5px + 12.5px);
+  top: calc(100% - 5px + (var(--psfy-playing-bar-info-cover-size) + var(--psfy-playing-bar-pd-y) * 2 - (var(--psfy-playing-bar-button-icon-size) + var(--psfy-playing-bar-button-pd-y) * 2)) / 2 + var(--psfy-border-wg) * 2);
 }
 
 .connect-device-list-container::before {
@@ -29,43 +29,43 @@
 }
 
 .connect-device-list-item {
-  background-color: hsl(0 0% 100%);
-  column-gap: calc(14px - 7px);
-  padding: 8px 14px 8px calc(14px - 7px);
+  background-color: var(--psfy-cl-white);
+  column-gap: var(--psfy-playing-bar-button-pd-x);
+  padding: 8px calc(var(--psfy-playing-bar-button-pd-x) * 2) 8px var(--psfy-playing-bar-button-pd-x);
 }
 
 .connect-device-list-item:hover,
 .connect-device-list-item:focus {
-  background-color: hsl(0 0% 100%);
+  background-color: var(--psfy-cl-white);
 }
 
 .connect-device-list-item__icon {
   border-radius: var(--psfy-playing-bar-button-border-radius);
-  color: var(--psfy-color-gray-08);
+  color: var(--psfy-cl-gray-10);
   display: flex;
   padding: var(--psfy-playing-bar-button-pd);
 }
 
 .connect-device-list-item--active .connect-device-list-item__icon {
-  background-color: var(--psfy-color-gray-01);
-  color: var(--psfy-color-gray-08);
+  background-color: var(--psfy-cl-gray-01);
+  color: var(--psfy-cl-gray-10);
 }
 
 .connect-device-list-item:hover .connect-device-list-item__icon,
 .connect-device-list-item:focus .connect-device-list-item__icon {
-  background-color: var(--psfy-color-gray-01);
-  color: var(--psfy-color-gray-08);
+  background-color: var(--psfy-cl-gray-01);
+  color: var(--psfy-cl-gray-10);
 }
 
 .connect-device-list-item:hover:active .connect-device-list-item__icon,
 .connect-device-list-item:focus:active .connect-device-list-item__icon {
-  background-color: var(--psfy-color-gray-02);
-  color: var(--psfy-color-gray-11);
+  background-color: var(--psfy-cl-gray-02);
+  color: var(--psfy-cl-gray-13);
 }
 
 .connect-device-list-item__icon svg {
-  height: 18px;
-  width: 18px;
+  height: var(--psfy-playing-bar-button-icon-size);
+  width: var(--psfy-playing-bar-button-icon-size);
 }
 
 .connect-device-title-hifi-container {
@@ -73,19 +73,19 @@
 }
 
 .connect-device-list-item .connect-device-list-item__device-subtitle {
-  color: var(--psfy-color-gray-08);
+  color: var(--psfy-cl-gray-10);
   font-family: var(--psfy-font-family);
   font-size: var(--psfy-font-size-02);
-  font-weight: var(--psfy-playing-bar-info-name-font-wg);
+  font-weight: var(--psfy-font-wg-02);
 }
 
 .connect-device-list-item__info span {
-  color: var(--psfy-color-gray-06);
+  color: var(--psfy-cl-gray-08);
   font-family: var(--psfy-font-family);
   font-size: var(--psfy-font-size-02);
-  font-weight: var(--psfy-playing-bar-info-artists-font-wg);
+  font-weight: var(--psfy-font-wg-03);
 }
 
 .connect-device-list-item__info svg {
-  color: var(--psfy-color-gray-06);
+  color: var(--psfy-cl-gray-08);
 }

@@ -1,21 +1,22 @@
 html {
   --psfy-border-wg: .5px;
-  --psfy-border: solid var(--psfy-border-wg) var(--psfy-color-gray-04);
+  --psfy-border: solid var(--psfy-border-wg) var(--psfy-cl-gray-04);
   --psfy-playing-bar-button-border-radius: 6px;
   --psfy-playing-bar-button-gap: 0 2px;
   --psfy-playing-bar-button-icon-size: 18px;
-  --psfy-playing-bar-button-pd: 5px 7px;
-  --psfy-playing-bar-info-artists-font-wg: 500;
+  --psfy-playing-bar-button-pd-x: 7px;
+  --psfy-playing-bar-button-pd-y: 5px;
+  --psfy-playing-bar-button-pd: var(--psfy-playing-bar-button-pd-y) var(--psfy-playing-bar-button-pd-x);
   --psfy-playing-bar-info-cover-size: 42px;
   --psfy-playing-bar-info-hover-margin-x: calc(var(--psfy-playing-bar-info-cover-size) + 12px);
-  --psfy-playing-bar-info-name-font-wg: 600;
   --psfy-playing-bar-info-transform: translateX(calc((var(--psfy-playing-bar-info-cover-size) + var(--psfy-border-wg)) * -1));
   --psfy-playing-bar-info-transition: transform .25s cubic-bezier(.3, 0, 0, 1);
+  --psfy-playing-bar-pd-y: 4.5px;
   --psfy-playing-bar-progress-bar-hg: 3px;
 }
 
 .main-nowPlayingBar-container {
-  background-color: var(--psfy-color-white);
+  background-color: var(--psfy-cl-white);
   border-top: 0;
 }
 
@@ -25,7 +26,7 @@ html {
   grid-template-areas: 'controls info actions';
   grid-template-columns: 1fr 320px 1fr;
   height: auto;
-  padding: 4.5px 16px;
+  padding: var(--psfy-playing-bar-pd-y) 16px;
 }
 
 .main-connectBar-connectBar {

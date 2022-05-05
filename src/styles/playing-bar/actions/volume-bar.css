@@ -9,18 +9,18 @@
 }
 
 .volume-bar .progress-bar {
-  --fg-color: var(--psfy-color-gray-003);
-  --is-active-fg-color: var(--psfy-color-gray-003);
+  --fg-color: var(--psfy-cl-gray-05);
+  --is-active-fg-color: var(--psfy-cl-gray-05);
   --progress-bar-height: 3px;
 }
 
 .volume-bar .x-progressBar-progressBarBg {
-  background-color: var(--psfy-color-gray-01);
-  border: solid 1px var(--psfy-color-gray-02);
+  background-color: var(--psfy-cl-gray-01);
+  border: solid 1px var(--psfy-cl-gray-02);
 }
 
 .volume-bar .x-progressBar-progressBarBg > div > div {
-  border: solid 1px var(--psfy-color-gray-004);
+  border: solid 1px var(--psfy-cl-gray-06);
   margin-left: -1px;
   margin-right: -1px;
   margin-top: -1px;
@@ -33,7 +33,7 @@
 }
 
 .volume-bar .progress-bar__slider {
-  border: solid 1px var(--psfy-color-gray-003);
+  border: solid 1px var(--psfy-cl-gray-05);
   box-shadow: none;
   display: block;
   height: 13px;
